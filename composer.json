@@ -1,0 +1,48 @@
+{
+  "name": "arissystem/moadian",
+  "type": "library",
+  "description": "PHP SDK for working with tp.tax.gov.ir (سامانه مودیان مالیاتی)",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Arissystem\\Moadian\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Arissystem\\Moadian\\Tests\\": "tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ali Rahimi",
+      "email": "arahimihajiabadi@gmail.com"
+    },
+    {
+      "name": "Amir Reza Mehbakhsh",
+      "email": "theamirrezam75@gmail.com"
+    },
+    {
+      "name": "Soheil Yousefi",
+      "email": "myparstik@gmail.com"
+    },
+    {
+      "name": "Babak Tayebirad",
+      "email": "t.tayebirad@arissystem.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-openssl": "*",
+    "guzzlehttp/guzzle": "^6.2",
+    "ramsey/uuid": "^4.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "monolog/monolog": "^2.9",
+    "symfony/var-dumper": "^5.4"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit tests --colors"
+  }
+}
